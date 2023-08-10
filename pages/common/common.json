@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "tabbar": "../../components/tabbarComponent/tabbar",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "navigationBarTitleText": "",
+  "navigationBarCustomButton": {
+    "position": "right",
+    "show":  true
+  }
+  
+}

@@ -1,0 +1,43 @@
+<tabbar tabbar="{{tabbar}}">
+</tabbar>
+<!-- <view class="head-box">
+  早上好！张三先生 <van-icon class="chat" name="chat-o" info="77" />
+</view> -->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" circular="{{true}}" indicator-color="#CCCCCC" indicator-active-color="#76b704">
+  <swiper-item>
+    <image style="width: 100%;" src="https://th.bing.com/th/id/OIP.XrbLj__s7KD1Cb7b-3SiCwHaEL?pid=ImgDet&rs=1"></image>
+  </swiper-item>
+  <swiper-item>
+    <image style="width: 100%;" src="https://th.bing.com/th/id/OIP.qxzFhgnBX1xWNSW6p5rhHAHaEK?pid=ImgDet&rs=1"></image>
+  </swiper-item>
+  <swiper-item>
+    <image style="width: 100%;" src="https://th.bing.com/th/id/OIP.qxzFhgnBX1xWNSW6p5rhHAHaEK?pid=ImgDet&rs=1"></image>
+  </swiper-item>
+</swiper>
+
+<view class="box">
+  <view wx:for="{{list}}" wx:key="index" wx:for-item="item" class="box-content">
+    <view class="img"></view>
+    <view class="name">{{item.name}}</view>
+  </view>
+</view>
+
+<van-grid clickable="{{true}}" column-num="{{12}}" use-slot="{{true}}" column-num="4">
+  <van-grid-item bindtap="onClickShow" data-type='{{item}}' class="grid-box" use-slot wx:for="{{ listBox }}" wx:for-item="item">
+    <view class="grid-content {{ item.isLast ? 'transparent' : '' }}">
+      <view class='grid-img'></view>
+      <view class="grid-name">{{item.name}}</view>
+    </view>
+  </van-grid-item>
+</van-grid>
+
+<view class="page-container">
+  <view class="transparent-overlay" wx:if="{{ show }}" bindtap="onClickHide">
+    <view class="content" data-target="content" catchtap="onClickContent">
+      <view class="overlay-head">
+        {{name}}
+      </view>
+      <view class="overlay-content"></view>
+    </view>
+  </view>
+</view>

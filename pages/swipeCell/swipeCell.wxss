@@ -1,0 +1,13 @@
+
+.van-swipe-cell__right{
+  background-color: aquamarine;
+  color: rgb(172, 87, 87);
+}
+.box1{
+  height: 100vh;
+}
+.box{
+  background-color:aquamarine;
+  border-bottom: azure 1px solid;
+  height: 100px;
+}

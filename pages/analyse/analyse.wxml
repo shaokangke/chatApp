@@ -1,0 +1,4 @@
+<!--pages/analyse/analyse.wxml-->
+<van-skeleton title row="3" />
+<tabbar tabbar="{{tabbar}}">
+</tabbar>

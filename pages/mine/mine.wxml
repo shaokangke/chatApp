@@ -1,0 +1,4 @@
+<!--pages/mine/mine.wxml-->
+<van-skeleton title row="3" />
+<tabbar tabbar="{{tabbar}}">
+</tabbar>

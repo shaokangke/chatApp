@@ -1,0 +1,4 @@
+<!--pages/assistant/assistant.wxml-->
+<tabbar tabbar="{{tabbar}}">
+</tabbar>
+<van-skeleton title row="3" />

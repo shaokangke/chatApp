@@ -1,0 +1,19 @@
+<!-- <view class="box1" bindtap="onTap"> 
+  <van-swipe-cell id="wx{{item.id}}" data-id="{{item.id}}" bind:open="onOpen" wx:for="{{list}}" style="width: 100%;" right-width="{{ 65 }}">
+  <view slot="left" class="van-swipe-cell__left">选择</view>
+  <view class="box">
+{{item.id}}
+  </view>
+  <view slot="right" class="van-swipe-cell__right">删除</view>
+</van-swipe-cell>
+</view> -->
+<view class="page-wrapper" catchtap="onWrapperTap">
+  <view class="box1">
+    <van-swipe-cell class="van-swipe-cell" wx:for="{{items}}" style="width: 100%;" right-width="{{65}}" bind:open="onOpen">
+      <view class="box">{{item.id}}</view>
+      <view slot="right" class="van-swipe-cell__right">删除1</view>
+    </van-swipe-cell>
+  </view>
+</view>
+
+

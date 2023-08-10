@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabbar": "../../components/tabbarComponent/tabbar",
+    "van-skeleton": "@vant/weapp/skeleton/index"
+  },
+  "enableShareAppMessage": true
+}
