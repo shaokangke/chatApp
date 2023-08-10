@@ -35,7 +35,7 @@
   <view class="transparent-overlay" wx:if="{{ show }}" bindtap="onClickHide">
     <view class="content" data-target="content" catchtap="onClickContent">
       <view class="overlay-head">
-        {{name}}
+        {{name}} 
       </view>
       <view class="overlay-content"></view>
     </view>
