@@ -23,6 +23,7 @@
     <block wx:for="{{naviList}}" wx:if="{{item!='hot'}}" wx:key="index">
       <view class="left-item" >
         <view id="{{item}}">
+        
           <view style="position: sticky;top: 0;z-index: 10;background: #ECECEC;height:48rpx;padding-top:16rpx">{{item}}</view>
           <view class="brand-line" wx:for="{{carlist[item]}}" wx:for-item="caritem" wx:key="index" data-record="{{caritem}}" catchtap="clickCar">
             <block>
